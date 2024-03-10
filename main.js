@@ -46,7 +46,7 @@ function jugar() {
         while (!opcionValida) {
             respuestaUsuario = prompt(`${pregunta.enunciado}\n${pregunta.opciones.join("\n")}\nPor favor ingresa una opción correcta:`);
             if (respuestaUsuario === null) {
-                return; // Salir del juego si el usuario cancela
+                return;
             } else if (respuestaUsuario.trim() === "" || isNaN(respuestaUsuario) || parseInt(respuestaUsuario) < 1 || parseInt(respuestaUsuario) > pregunta.opciones.length) {
                 alert("Por favor ingresa un dentro de las opciones disponibles.");
             } else {
