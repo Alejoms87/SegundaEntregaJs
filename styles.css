@@ -37,3 +37,26 @@ h1{
     align-items: center;
     
 }
+
+.finjuego{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 100px;
+    font-size: 24px;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+
+a:hover {
+    background-color: white;
+    color: black;
+}

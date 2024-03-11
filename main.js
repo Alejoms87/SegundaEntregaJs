@@ -32,6 +32,8 @@ function seleccionarPreguntasAleatorias() {
     return preguntasAleatorias;
 }
 
+document.getElementById("botonjugar").addEventListener("click", jugar);
+document.getElementById("botonsalir").addEventListener("click", salir);
 
 function jugar() {
     const preguntasAleatorias = seleccionarPreguntasAleatorias();
@@ -68,6 +70,9 @@ function jugar() {
     }else {
         alert ("Sos malisimo!")
     }
+
+    window.location.href = "juegofin.html";
+
 }
 
 
