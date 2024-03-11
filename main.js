@@ -46,7 +46,7 @@ function jugar() {
         let opcionValida = false;
 
         while (!opcionValida) {
-            respuestaUsuario = prompt(`${pregunta.enunciado}\n${pregunta.opciones.join("\n")}\nPor favor ingresa una opción correcta:`);
+            respuestaUsuario = prompt(`${pregunta.enunciado}\n${pregunta.opciones.join("\n")}Por favor ingresa una opción correcta:`);
             if (respuestaUsuario === null) {
                 return;
             } else if (respuestaUsuario.trim() === "" || isNaN(respuestaUsuario) || parseInt(respuestaUsuario) < 1 || parseInt(respuestaUsuario) > pregunta.opciones.length) {
@@ -63,7 +63,14 @@ function jugar() {
         }
     }
 
-    alert(`El juego termino .\nEl numero de respuestas correctas fue de : ${respuestasCorrectas}\nMientras que el numero de respuestas incorrectas fue de : ${respuestasIncorrectas}`);
+    alert(`El juego termino !
+    
+          El numero de respuestas correctas fue de : ${respuestasCorrectas}
+
+          Mientras que el numero de respuestas incorrectas fue de : ${respuestasIncorrectas}
+          
+          Gracias por participar de la experiencia del mundial!`);
+          
 
     if (respuestasCorrectas >= 4) {
         alert("¡La tenes reclara!Sabe un montón!");
